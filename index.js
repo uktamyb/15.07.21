@@ -43,5 +43,44 @@ var obj = {
   surname: "Hudoyarov",
   age: 38,
 };
-console.log(obj.name);
+// console.log(obj.name);
+// obj.yosh = 30; - bu yuqoridagi obj ga yangi yosh: 30 degan malumot qushadi;
+// delet obj.age; - bu age: 38; malumotni uchirib quyadi.
+// Object.freeze(obj); - bu malumotnimuzlatib ichidagi malumotni uchirmaydiyam, qushmaydiyam. Lekin uzgartirsa buladi.
 
+// objectni array ichiga joylashtirish:
+var student = [
+  {
+    id: 1,
+    name: "Bekzod",
+    surname: "Abdulkhayev",
+  },
+  {
+    id: 2,
+    name: "Akbarjon",
+    surname: "Abdulkhayev",
+  },
+  {
+    id: 3,
+    name: "Barkamol",
+    surname: "Abdulkhayev",
+  },
+  {
+    id: 4,
+    name: "Jamshid",
+    surname: "Abdulkhayev",
+  },
+  {
+    id: 5,
+    name: "Mirabdulla",
+    surname: "Abdulkhayev",
+  },
+  {
+    id: 6,
+    name: "Zarnigor",
+    surname: "Abdulkhayev",
+  }
+];
+student.map((value) => {
+  console.log(value.id, value.name);
+})
